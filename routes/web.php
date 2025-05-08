@@ -7,6 +7,9 @@ use App\Http\Controllers\homeController;
 use App\Http\Controllers\WhatsAppController ;
 
 Route::get('/', [AuthController::class, 'showLogin'])->name('login');
+Route::get('/register',[AuthController::class,'register'])->name('register');
+Route::Post('/registerUser',[AuthController::class,'registeUser'])->name('registeUser');
+
 Route::post('/login', [authController::class, 'login'])->name('verificaUsuario');
 Route::get('/logout', [authController::class, 'logout'])->name('logout');
 

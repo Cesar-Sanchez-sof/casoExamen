@@ -1,0 +1,204 @@
+/* Estilos generales */
+.deudas-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+/* Encabezado */
+.deudas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.deudas-header h1 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e3e7;
+    transition: all 0.3s ease;
+}
+
+.search-box:hover {
+    border-color: #c2cbd4;
+}
+
+.search-box i {
+    color: #7f8c8d;
+    margin: 0 0.75rem;
+}
+
+.search-box input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-btn {
+    background: #00c897;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-btn:hover {
+    background: #00b386;
+    transform: translateY(-1px);
+}
+
+/* Tabla de deudas */
+.deudas-table-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.deudas-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.deudas-table th {
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.deudas-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: middle;
+}
+
+.deudas-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Badges */
+.categoria-badge {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.categoria-badge.servicios {
+    background-color: #e3f9f3;
+    color: #00a67c;
+}
+
+.estado-badge {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.estado-badge.pendiente {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+/* Botón de pagar */
+.pagar-btn {
+    background-color: #00c897;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagar-btn:hover {
+    background-color: #00b386;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 200, 151, 0.2);
+}
+
+/* Navegación */
+.deudas-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #00c897;
+    background-color: #e6fffa;
+}
+
+.nav-link.active {
+    color: #00c897;
+    background-color: #e6fffa;
+}
+
+.nav-link i {
+    font-size: 1.1rem;
+}
+
+.search-form {
+    width: 100%;
+}
+
+/* Esto asegura que el formulario no añada espacios no deseados */
+.search-form {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+

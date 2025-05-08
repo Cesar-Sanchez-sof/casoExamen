@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #6b1e92; /* Morado Yape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-card {
+    background-color: #00d2c6; /* Verde agua Yape */
+    border-radius: 30px;
+    padding: 80px 40px 40px;
+    width: 340px;
+    position: relative;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo-container {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5b0075;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 4px solid #00d2c6;
+  }
+  
+  .logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  input {
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    background-color: #fffceb;
+    color: #333;
+  }
+  
+  input::placeholder {
+    color: #888;
+  }
+  
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #5b0075;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #43005a;
+  }
+  
+  .forgot-link {
+    font-size: 13px;
+    color: #5b0075;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  
+  .forgot-link:hover {
+    text-decoration: underline;
+  }
+  
